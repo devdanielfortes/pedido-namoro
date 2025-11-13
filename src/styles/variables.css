@@ -1,0 +1,8 @@
+:root {
+    --color-primary: #FF7F50;
+    --color-secondary: #FFDAB9;
+    --color-accent: #DAA520;
+    --color-text: #4a4a4a;
+    --color-bg: #FAFAFA;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}

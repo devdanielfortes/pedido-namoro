@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Um Convite para o Futuro, Gerlieny 💍</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Um Convite Especial</h1>
+            <p class="subtitle">O Início do Nosso Projeto de Vida</p>
+        </header>
+
+        <main class="content">
+            <p class="message">
+                Gerlieny, a vida é como um grande projeto, e desde que você entrou na minha, cada dia se tornou 
+                uma fase de construção cheia de alegria, paz e amor. Você é a parceira que sempre desejei para planejar 
+                os próximos capítulos e construir um futuro incrível.
+            </p>
+            <p class="message">
+                Seu sorriso e a forma como você me faz sentir especial são a base sólida de tudo que podemos ser. 
+                Eu não quero mais viver essa aventura sem ter você oficialmente ao meu lado.
+            </p>
+
+            <div class="proposal">
+                <span class="ring-icon">💍</span>
+                <p class="question">
+                    <strong>Gerlieny, você aceita ser a minha parceira de vida, a minha namorada?</strong>
+                </p>
+            </div>
+
+            <p class="signature">
+                Eu te Amo,
+                <br>
+                <strong>Daniel Fortes</strong>
+            </p>
+
+            <div class="buttons">
+                <form id="proposal-form" action="https://formspree.io/f/mpwkweag" method="POST">
+                    
+                    <input type="hidden" name="Pergunta" value="Pedido de Namoro - Gerlieny (Projeto)">
+                    
+                    <button type="submit" name="Resposta" value="SIM! VAMOS CONSTRUIR JUNTOS! 🏗️" class="btn btn-yes" id="btn-yes">
+                        SIM! VAMOS CONSTRUIR JUNTOS! 🏗️
+                    </button>
+                    
+                    <button type="button" class="btn btn-no" id="btn-no">
+                        Preciso de mais tempo...
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <div id="success-popup" class="success-popup">
+        <div class="popup-content">
+            <h2>🎉 NOSSO PROJETO COMEÇOU! 🎉</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 5px;">
+                Gerlieny, você acaba de me dar a melhor resposta!
+                <br>
+                <strong>Confira o Menu de Benefícios (Garantia de Felicidade):</strong>
+            </p>
+            
+            <ul class="happiness-menu">
+                <li>Mais carinho, atenção.</li>
+                <li>Suporte e parceria incondicional em todas as suas ideias.</li>
+                <li>Muita risada e aventuras inesquecíveis.</li>
+                <li>Um amor que cresce a cada novo amanhecer.</li>
+            </ul>
+
+            <p style="font-size: 1rem; margin-top: 20px; font-weight: 300;">
+                <strong>Bônus:</strong> Seu namorado (eu) promete te amar para sempre. ❤️
+            </p>
+            
+            <button class="popup-close-btn" onclick="document.getElementById('success-popup').classList.remove('show');">
+                Fechar e me amar
+            </button>
+        </div>
+    </div>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
