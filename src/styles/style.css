@@ -1,22 +1,17 @@
 @import url('variables.css');
 
 html, body {
-    overflow: hidden; 
-    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     background-color: var(--color-bg);
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
 }
-
-::-webkit-scrollbar { display: none; }
-html { scrollbar-width: none; }
 
 body::before {
     content: '';
@@ -41,7 +36,9 @@ body::before {
     text-align: center;
     transform: rotate(-1deg);
     transition: all 0.5s ease-out;
+    margin: 0 auto; /* ADICIONADO: Garante a centralização horizontal */
 }
+
 .container:hover {
     transform: rotate(0deg) scale(1.02);
     box-shadow: 0 15px 40px var(--color-shadow);
